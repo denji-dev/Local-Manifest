@@ -5,8 +5,8 @@
    		<remote name="gojo"
 			fetch="https://github.com/SatoruGojo2k23" />
 
-      <remote name="denji"
-			fetch="https://github.com/denji-dev" />
+                <remote name="denji"
+			fetch="https://github.com/lancelot415" />
 
                 <remote name="clang"
 			fetch="https://github.com/kdrag0n" />
@@ -36,7 +36,7 @@
 
 	<!-- Add 4G+ toggle -->
 		<remove-project name="crdroidandroid/android_packages_apps_Settings" />
-		<project path="packages/apps/Settings" name="CrDroid-android_packages_apps_Settings" remote="gojo" revision="13.0" clone-depth="1" />
+		<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="denji" revision="13.0" clone-depth="1" />
 
 
 	<!-- Patches (IMS, BT) -->
@@ -45,9 +45,9 @@
 		<remove-project name="crdroidandroid/android_frameworks_native" />
 		<remove-project name="crdroidandroid/android_packages_modules_Wifi" />
 		
-		<project path="frameworks/base" name="CrDroid-android_frameworks_base" remote="gojo" revision="13.0" clone-depth="1" />
-		<project path="frameworks/av" name="CrDroid-android_frameworks_av" remote="gojo" revision="13.0" clone-depth="1" />
-		<project path="frameworks/native" name="CrDroid-android_frameworks_native" remote="gojo" revision="13.0" clone-depth="1" />
-		<project path="packages/modules/Wifi" name="CrDroid-android_packages_modules_Wifi" remote="gojo" revision="13.0" clone-depth="1" />
+		<project path="frameworks/base" name="android_frameworks_base" remote="denji" revision="13.0" clone-depth="1" />
+		<project path="frameworks/av" name="android_frameworks_av" remote="denji" revision="13.0" clone-depth="1" />
+		<project path="frameworks/native" name="android_frameworks_native" remote="denji" revision="13.0" clone-depth="1" />
+		<project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="denji" revision="13.0" clone-depth="1" />
 
 </manifest>
