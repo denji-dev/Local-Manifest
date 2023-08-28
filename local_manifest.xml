@@ -10,39 +10,15 @@
 			fetch="https://gitlab.com/rintokhan" />
 
     <!-- Device Trees -->
-       <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="13.0" clone-depth="1" />
-       <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="denji" revision="arrow-13.1" clone-depth="1" />
-       <project path="kernel/realme/RMX2020" name="kernel_realme_RMX2020" remote="denji" revision="arrow-13.1" clone-depth="1" />
+       <project path="device/realme/RMX2020" name="A11-device_realme_RMX2020" remote="denji" revision="11.0" clone-depth="1" />
+       <project path="vendor/realme/RMX2020" name="A11-vendor_realme_RMX2020" remote="denji" revision="11.0" clone-depth="1" />
+       <project path="kernel/realme/RMX2020" name="A11-kernel_realme_RMX2020" remote="denji" revision="11.0" clone-depth="1" />
 
-	<!-- IMS -->
-		<project path="vendor/realme/RMX2020-ims" name="vendor_realme_RMX2020-ims" remote="denji" revision="arrow-13.1" clone-depth="1" />
+    <!-- RealmeDirac & RealmeParts -->
+      <project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="denji" revision="11.0" clone-depth="1" />
+      <project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="denji" revision="11.0" clone-depth="1" />
 
-    <!-- MTK Hardware -->
-  	  <project path="hardware/mediatek" name="hardware_mediatek" remote="denji" revision="arrow-13.1" clone-depth="1" />
-
-	<!-- Sepolicy -->
-		<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="denji" revision="arrow-13.1" clone-depth="1" />
-
-
-	<!-- Clang -->
-		<project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="clang-r437112b" remote="clang" revision="master" clone-depth="1" />
-                <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
-
-
-	<!-- Add 4G+ toggle -->
-		<remove-project name="crdroidandroid/android_packages_apps_Settings" />
-		<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="denji" revision="13.0" clone-depth="1" />
-
-
-	<!-- Patches (IMS, BT) -->
-		<remove-project name="crdroidandroid/android_frameworks_base" />
-		<remove-project name="crdroidandroid/android_frameworks_av" />
-		<remove-project name="crdroidandroid/android_frameworks_native" />
-		<remove-project name="crdroidandroid/android_packages_modules_Wifi" />
-		
-		<project path="frameworks/base" name="android_frameworks_base" remote="denji" revision="13.0" clone-depth="1" />
-		<project path="frameworks/av" name="android_frameworks_av" remote="denji" revision="13.0" clone-depth="1" />
-		<project path="frameworks/native" name="android_frameworks_native" remote="denji" revision="13.0" clone-depth="1" />
-		<project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="denji" revision="13.0" clone-depth="1" />
+    <!-- Clang -->
+      <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
 </manifest>
