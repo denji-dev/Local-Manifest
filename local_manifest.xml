@@ -9,6 +9,9 @@
                 <remote name="clang"
 			fetch="https://gitlab.com/rintokhan" />
 
+	        <remote name="crdroid"
+			fetch="https://github.com/crdroidandroid" />
+
     <!-- Device Trees -->
        <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="rising-13.0" clone-depth="1" />
        <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="denji" revision="arrow-13.1" clone-depth="1" />
@@ -30,13 +33,13 @@
 
 
 	<!-- Patches (IMS, BT) -->
-		<remove-project name="crdroidandroid/android_frameworks_av" />
-		<remove-project name="crdroidandroid/android_frameworks_native" />
-		<remove-project name="crdroidandroid/android_packages_modules_Wifi" />
+		<remove-project name="RisingTechOSS/android_frameworks_av" />
+		<remove-project name="RisingTechOSS/android_frameworks_native" />
+		<remove-project name="RisingTechOSS/android_packages_modules_Wifi" />
 		
-		<project path="frameworks/av" name="android_frameworks_av" remote="denji" revision="13.0" clone-depth="1" />
-		<project path="frameworks/native" name="android_frameworks_native" remote="denji" revision="13.0" clone-depth="1" />
-		<project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="denji" revision="13.0" clone-depth="1" />
+		<project path="frameworks/av" name="rising_frameworks_av" remote="denji" revision="thirteen" clone-depth="1" />
+		<project path="frameworks/native" name="rising_frameworks_native" remote="denji" revision="thirteen" clone-depth="1" />
+		<project path="packages/modules/Wifi" name="rising_packages_modules_Wifi" remote="denji" revision="thirteen" clone-depth="1" />
 
 	<!-- Replacement -->
 	        <remove-project name="platform/frameworks/opt/net/ims" />
