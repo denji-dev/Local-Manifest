@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-
+ <manifest>
 	<!-- Remotes -->
    		
                 <remote name="denji"
@@ -9,16 +8,23 @@
                 <remote name="clang"
 			fetch="https://gitlab.com/rintokhan" />
 
+	        <remote name="patch"
+                        fetch="https://github.com/Los-FE" />
+        
     <!-- Device Trees -->
        <project path="device/realme/RMX2020" name="A11-device_realme_RMX2020" remote="denji" revision="11.0" clone-depth="1" />
        <project path="vendor/realme/RMX2020" name="A11-vendor_realme_RMX2020" remote="denji" revision="11.0" clone-depth="1" />
-       <project path="kernel/realme/RMX2020" name="A11-kernel_realme_RMX2020" remote="denji" revision="11.0" clone-depth="1" />
+       <project path="kernel/realme/RMX2020" name="A11-kernel_realme_RMX2020" remote="denji" revision="Q" clone-depth="1" />
 
     <!-- RealmeDirac & RealmeParts -->
-      <project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="denji" revision="11.0" clone-depth="1" />
-      <project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="denji" revision="11.0" clone-depth="1" />
+       <project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="denji" revision="11.0" clone-depth="1" />
+       <project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="denji" revision="11.0" clone-depth="1" />
 
     <!-- Clang -->
-      <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+       <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
+    <!-- Replacement -->
+       <remove-project name="platform/external/selinux" />
+       <project path="external/selinux" name="android_external_selinux" remote="patch" revision="lineage-18.1" clone-depth="1" />
+	
 </manifest>
