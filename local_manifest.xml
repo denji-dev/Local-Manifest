@@ -46,5 +46,5 @@
 
 	<!-- Replacement -->
 	        <remove-project name="platform/frameworks/opt/net/ims" />
-	        <project path="frameworks/opt/net/ims" name="crdroidandroid/android_frameworks_opt_net_ims" remote="crdroid" revision="13.0" clone-depth="1" />
+	        <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="crdroid" revision="13.0" clone-depth="1" />
 </manifest>
