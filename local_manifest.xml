@@ -11,6 +11,9 @@
 
 	        <remote name="crdroid"
 			fetch="https://github.com/crdroidandroid" />
+	
+	        <remote name="lineage"
+			fetch="https://github.com/LineageOS" />
 
     <!-- Device Trees -->
        <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="rising-13.0" clone-depth="1" />
@@ -35,11 +38,11 @@
 	<!-- Patches (IMS, BT) -->
 		<remove-project name="RisingTechOSS/android_frameworks_av" />
 		<remove-project name="RisingTechOSS/android_frameworks_native" />
-		<remove-project name="RisingTechOSS/android_packages_modules_Wifi" />
+		<remove-project name="LineageOS/android_packages_modules_Wifi" />
 		
 		<project path="frameworks/av" name="rising_frameworks_av" remote="denji" revision="thirteen" clone-depth="1" />
 		<project path="frameworks/native" name="rising_frameworks_native" remote="denji" revision="thirteen" clone-depth="1" />
-		<project path="packages/modules/Wifi" name="rising_packages_modules_Wifi" remote="denji" revision="thirteen" clone-depth="1" />
+		<project path="packages/modules/Wifi" name="rising_packages_modules_Wifi" remote="denji" revision="lineage-20.0" clone-depth="1" />
 
 	<!-- Replacement -->
 	        <remove-project name="platform/frameworks/opt/net/ims" />
