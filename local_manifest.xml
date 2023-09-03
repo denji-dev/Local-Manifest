@@ -9,12 +9,6 @@
                 <remote name="clang"
 			fetch="https://gitlab.com/rintokhan" />
 
-	        <remote name="crdroid"
-			fetch="https://github.com/crdroidandroid" />
-	
-	        <remote name="lineage"
-			fetch="https://github.com/LineageOS" />
-
     <!-- Device Trees -->
        <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="alpha-13.0" clone-depth="1" />
        <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="denji" revision="arrow-13.1" clone-depth="1" />
