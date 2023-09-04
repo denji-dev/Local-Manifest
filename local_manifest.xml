@@ -30,8 +30,8 @@
 
 
 	<!-- Patches (IMS, BT) -->
-		<remove-project name="AlphaDroid-Project/frameworks_av" />
-		<remove-project name="AlphaDroid-Project/frameworks_native" />
+		<remove-project name="frameworks_av" />
+		<remove-project name="frameworks_native" />
 		<remove-project name="crdroidandroid/android_packages_modules_Wifi" />
 		
 		<project path="frameworks/av" name="alpha_frameworks_av" remote="denji" revision="alpha-13" clone-depth="1" />
