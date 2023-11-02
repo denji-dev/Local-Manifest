@@ -10,22 +10,21 @@
 			fetch="https://gitlab.com/rintokhan" />
 
     <!-- Device Trees -->
-       <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="13.0" clone-depth="1" />
-       <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="denji" revision="arrow-13.1" clone-depth="1" />
-       <project path="kernel/realme/RMX2020" name="kernel_realme_RMX2020" remote="denji" revision="arrow-13.1" clone-depth="1" />
+       <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="derpfest-14.0" clone-depth="1" />
+       <project path="vendor/realme/RMX2020" name="android_vendor_realme_RMX2020" remote="denji" revision="arrow-14.0" clone-depth="1" />
+       <project path="kernel/realme/RMX2020" name="android_kernel_realme_RMX2020" remote="denji" revision="arrow-14.0" clone-depth="1" />
 
 	<!-- IMS -->
-		<project path="vendor/realme/RMX2020-ims" name="vendor_realme_RMX2020-ims" remote="denji" revision="arrow-13.1" clone-depth="1" />
+		<project path="vendor/realme/RMX2020-ims" name="android_vendor_realme_RMX2020-ims" remote="denji" revision="arrow-14.0" clone-depth="1" />
 
     <!-- MTK Hardware -->
-  	  <project path="hardware/mediatek" name="hardware_mediatek" remote="denji" revision="arrow-13.1" clone-depth="1" />
+  	       <project path="hardware/mediatek" name="android_hardware_mediatek" remote="denji" revision="arrow-13.1" clone-depth="1" />
 
 	<!-- Sepolicy -->
-		<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="denji" revision="arrow-13.1" clone-depth="1" />
+		<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="denji" revision="arrow-14.0" clone-depth="1" />
 
 
 	<!-- Clang -->
-		<project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="clang-r437112b" remote="clang" revision="master" clone-depth="1" />
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
 
