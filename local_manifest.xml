@@ -10,7 +10,7 @@
 			fetch="https://gitlab.com/rintokhan" />
 
     <!-- Device Trees -->
-       <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="derpfest-14.0" clone-depth="1" />
+       <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="14.0" clone-depth="1" />
        <project path="vendor/realme/RMX2020" name="android_vendor_realme_RMX2020" remote="denji" revision="arrow-14.0" clone-depth="1" />
        <project path="kernel/realme/RMX2020" name="android_kernel_realme_RMX2020" remote="denji" revision="arrow-14.0" clone-depth="1" />
 
@@ -28,9 +28,9 @@
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
 	<!-- Patches (IMS, BT) -->
-		<remove-project name="frameworks_av" />
-		<remove-project name="frameworks_native" />
+		<remove-project name="crdroidandroid/android_frameworks_av" />
+		<remove-project name="crdroidandroid/frameworks_native" />
 		
-		<project path="frameworks/av" name="frameworks_av" remote="denji" revision="14" clone-depth="1" />
-		<project path="frameworks/native" name="frameworks_native" remote="denji" revision="14" clone-depth="1" />
+		<project path="frameworks/av" name="android_frameworks_av" remote="denji" revision="14.0" clone-depth="1" />
+		<project path="frameworks/native" name="android_frameworks_native" remote="denji" revision="14.0" clone-depth="1" />
 </manifest>
