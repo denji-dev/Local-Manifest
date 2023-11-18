@@ -28,9 +28,11 @@
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
 	<!-- Patches (IMS, BT) -->
+	        <remove-project name="crdroidandroid/android_frameworks_base" />
 		<remove-project name="crdroidandroid/android_frameworks_av" />
 		<remove-project name="crdroidandroid/frameworks_native" />
 		
-		<project path="frameworks/av" name="android_frameworks_av" remote="denji" revision="14.0" clone-depth="1" />
+		<project path="frameworks/base" name="android_frameworks_base" remote="denji" revision="14.0" clone-depth="1" />
+	        <project path="frameworks/av" name="android_frameworks_av" remote="denji" revision="14.0" clone-depth="1" />
 		<project path="frameworks/native" name="android_frameworks_native" remote="denji" revision="14.0" clone-depth="1" />
 </manifest>
