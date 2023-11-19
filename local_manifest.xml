@@ -6,33 +6,33 @@
                 <remote name="denji"
 			fetch="https://github.com/Rinto02" />
 
-                <remote name="clang"
+                <remote name="clamg"
 			fetch="https://gitlab.com/rintokhan" />
 
-    <!-- Device Trees -->
-       <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="14.0" clone-depth="1" />
-       <project path="vendor/realme/RMX2020" name="android_vendor_realme_RMX2020" remote="denji" revision="arrow-14.0" clone-depth="1" />
-       <project path="kernel/realme/RMX2020" name="android_kernel_realme_RMX2020" remote="denji" revision="arrow-14.0" clone-depth="1" />
+        <!-- Device Trees -->
+                <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="14.0" clone-depth="1" />
+                <project path="vendor/realme/RMX2020" name="android_vendor_realme_RMX2020" remote="denji" revision="arrow-14.0" clone-depth="1" />
+                <project path="kernel/realme/RMX2020" name="android_kernel_realme_RMX2020" remote="denji" revision="arrow-14.0" clone-depth="1" />
 
 	<!-- IMS -->
-		<project path="vendor/realme/RMX2020-ims" name="android_vendor_realme_RMX2020-ims" remote="denji" revision="arrow-14.0" clone-depth="1" />
+	        <project path="vendor/realme/RMX2020-ims" name="android_vendor_realme_RMX2020-ims" remote="denji" revision="arrow-14.0" clone-depth="1" />
 
-    <!-- MTK Hardware -->
-  	       <project path="hardware/mediatek" name="hardware_mediatek" remote="denji" revision="arrow-13.1" clone-depth="1" />
+        <!-- MTK Hardware -->
+  	        <project path="hardware/mediatek" name="hardware_mediatek" remote="denji" revision="arrow-13.1" clone-depth="1" />
 
 	<!-- Sepolicy -->
 		<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="denji" revision="arrow-14.0" clone-depth="1" />
 
-
 	<!-- Clang -->
-                <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+                <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clamg" revision="master" clone-depth="1" />
 
-	<!-- Patches (IMS, BT) -->
+	<!-- Remove Projects -->
 	        <remove-project name="crdroidandroid/android_frameworks_base" />
 		<remove-project name="crdroidandroid/android_frameworks_av" />
 		<remove-project name="crdroidandroid/frameworks_native" />
-		
+	<!-- Replacement -->
 		<project path="frameworks/base" name="android_frameworks_base" remote="denji" revision="14.0" clone-depth="1" />
 	        <project path="frameworks/av" name="android_frameworks_av" remote="denji" revision="14.0" clone-depth="1" />
 		<project path="frameworks/native" name="android_frameworks_native" remote="denji" revision="14.0" clone-depth="1" />
+
 </manifest>
