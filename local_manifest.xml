@@ -18,7 +18,7 @@
                 <project path="kernel/realme/RMX2020" name="kernel_realme_RMX2020" remote="trees" revision="fourteen" clone-depth="1" />
 
 	<!-- IMS -->
-	        <project path="vendor/realme/RMX2020-ims" name="android_vendor_realme_RMX2020-ims" remote="denji" revision="arrow-14.0" clone-depth="1" />
+	        <project path="vendor/realme/RMX2020-ims" name="vendor_realme_RMX2020-ims" remote="trees" revision="fourteen" clone-depth="1" />
 
         <!-- MTK Hardware -->
   	        <project path="hardware/mediatek" name="android_hardware_mediatek" remote="denji" revision="lineage-21" clone-depth="1" />
