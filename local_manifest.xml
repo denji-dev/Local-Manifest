@@ -26,14 +26,4 @@
 	<!-- Sepolicy -->
 		<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="denji" revision="arrow-14.0" clone-depth="1" />
 
-
-	<!-- Remove Projects -->
-	        <remove-project name="LineageOS/android_frameworks_base" />
-		<remove-project name="LineageOS/android_frameworks_av" />
-		<remove-project name="LineageOS/android_frameworks_native" />
-	<!-- Replacement -->
-		<project path="frameworks/base" name="matrixx_frameworks_base" remote="denji" revision="14.0" clone-depth="1" />
-	        <project path="frameworks/av" name="matrixx_frameworks_av" remote="denji" revision="14.0" clone-depth="1" />
-		<project path="frameworks/native" name="matrixx_frameworks_native" remote="denji" revision="14.0" clone-depth="1" />
-
 </manifest>
