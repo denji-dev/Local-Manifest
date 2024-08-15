@@ -20,10 +20,7 @@
 	<!-- IMS -->
 	        <project path="vendor/realme/RMX2020-ims" name="vendor_realme_RMX2020-ims" remote="trees" revision="fourteen" clone-depth="1" />
 
-        <!-- MTK Hardware -->
-  	        <project path="hardware/mediatek" name="android_hardware_mediatek" remote="denji" revision="lineage-21" clone-depth="1" />
-
-	<!-- Sepolicy -->
+        <!-- Sepolicy -->
 		<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="denji" revision="lineage-21" clone-depth="1" />
 
 </manifest>
