@@ -18,22 +18,21 @@
                 <project path="kernel/realme/RMX2020" name="kernel_realme_RMX2020" remote="trees" revision="fourteen" clone-depth="1" />
 
 	<!-- IMS -->
-	        <project path="vendor/realme/RMX2020-ims" name="android_vendor_realme_RMX2020-ims" remote="denji" revision="arrow-14.0" clone-depth="1" />
+	        <project path="vendor/realme/RMX2020-ims" name="vendor_realme_RMX2020-ims" remote="trees" revision="fourteen" clone-depth="1" />
 
         <!-- MTK Hardware -->
-  	        <project path="hardware/mediatek" name="hardware_mediatek" remote="denji" revision="arrow-13.1" clone-depth="1" />
+  	        <project path="hardware/mediatek" name="android_hardware_mediatek" remote="denji" revision="lineage-21" clone-depth="1" />
 
 	<!-- Sepolicy -->
-		<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="denji" revision="arrow-14.0" clone-depth="1" />
+		<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="denji" revision="lineage-21" clone-depth="1" />
 
 
 	<!-- Remove Projects -->
 	        <remove-project name="LineageOS/android_frameworks_base" />
 		<remove-project name="LineageOS/android_frameworks_av" />
-		<remove-project name="LineageOS/android_frameworks_native" />
+		
 	<!-- Replacement -->
 		<project path="frameworks/base" name="Los_frameworks_base" remote="denji" revision="lineage-21.0" clone-depth="1" />
 	        <project path="frameworks/av" name="Los_frameworks_av" remote="denji" revision="lineage-21.0" clone-depth="1" />
-		<project path="frameworks/native" name="Los_frameworks_native" remote="denji" revision="lineage-21.0" clone-depth="1" />
-
+		
 </manifest>
