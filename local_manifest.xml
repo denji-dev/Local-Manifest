@@ -13,7 +13,7 @@
 			fetch="https://github.com/PixelOS-Devices" />
 
         <!-- Device Trees -->
-                <project path="device/realme/RMX2020" name="device_realme_RMX2020_Matrixx" remote="denji" revision="lineage-21.0" clone-depth="1" />
+                <project path="device/realme/RMX2020" name="device_realme_RMX2020_superior" remote="denji" revision="superior" clone-depth="1" />
                 <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="trees" revision="fourteen" clone-depth="1" />
                 <project path="kernel/realme/RMX2020" name="kernel_realme_RMX2020" remote="trees" revision="fourteen" clone-depth="1" />
 
@@ -26,13 +26,4 @@
 	<!-- Sepolicy -->
 		<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="denji" revision="lineage-21" clone-depth="1" />
 
-
-	<!-- Remove Projects -->
-	        <remove-project name="LineageOS/android_frameworks_base" />
-		<remove-project name="LineageOS/android_frameworks_av" />
-		
-	<!-- Replacement -->
-		<project path="frameworks/base" name="Los_frameworks_base" remote="denji" revision="lineage-21.0" clone-depth="1" />
-	        <project path="frameworks/av" name="Los_frameworks_av" remote="denji" revision="lineage-21.0" clone-depth="1" />
-		
 </manifest>
