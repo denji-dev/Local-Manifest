@@ -13,7 +13,7 @@
 			fetch="https://github.com/PixelOS-Devices" />
 
         <!-- Device Trees -->
-                <project path="device/realme/RMX2020" name="androi_device_realme_RMX2020" remote="denji" revision="fourteen" clone-depth="1" />
+                <project path="device/realme/RMX2020" name="android_device_realme_RMX2020" remote="denji" revision="fourteen" clone-depth="1" />
                 <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="trees" revision="fourteen" clone-depth="1" />
                 <project path="kernel/realme/RMX2020" name="kernel_realme_RMX2020" remote="trees" revision="fourteen" clone-depth="1" />
 
