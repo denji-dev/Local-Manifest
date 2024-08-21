@@ -24,6 +24,6 @@
   	        <project path="hardware/mediatek" name="android_hardware_mediatek" remote="denji" revision="lineage-21" clone-depth="1" />
 
 	<!-- Sepolicy -->
-		<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="denji" revision="14.0" clone-depth="1" />
+		<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="denji" revision="lineage-21" clone-depth="1" />
 
 </manifest>
