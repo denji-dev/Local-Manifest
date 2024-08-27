@@ -15,11 +15,8 @@
 	        <remote name="los"
 			fetch="https://github.com/LineageOS" />
 
-	        <remote name="vos"
-			fetch="https://github.com/Koushikdey2003" />
-
         <!-- Device Trees -->
-                <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="vos" revision="vos-14" />
+                <project path="device/realme/RMX2020" name="device_realme_RMX2020_vos" remote="denji" revision="vos-14" />
                 <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="trees" revision="fourteen" />
                 <project path="kernel/realme/RMX2020" name="kernel_realme_RMX2020" remote="trees" revision="fourteen" />
 
