@@ -2,18 +2,26 @@
  <manifest>
 	<!-- Remotes -->
    		
-        <remote name="denji"
-		fetch="https://github.com/Rinto02" />
-	<remote name="g70"
-		fetch="https://github.com/Realme-G70-Series" />
+                <remote name="denji"
+			fetch="https://github.com/Rinto02" />
 
-       <!-- Device Trees -->
-       <project path="device/realme/RMX2020" name="A11-device_realme_RMX2020" remote="denji" revision="11.0" clone-depth="1" />
-       <project path="device/realme/RMX2020-kernel" name="device_realme_RMX2020-kernel" remote="denji" revision="dot11" clone-depth="1" />
-       <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="g70" revision="arrow-11.0" clone-depth="1" />
-       
-       <!-- RealmeDirac & RealmeParts -->
-       <project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="g70" revision="dot" clone-depth="1" />
-       <project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="g70" revision="lineage-18.1" clone-depth="1" />
+                <remote name="clang"
+			fetch="https://gitlab.com/rintokhan" />
 
+	        <remote name="patch"
+                        fetch="https://github.com/Los-FE" />
+        
+    <!-- Device Trees -->
+       <project path="device/realme/RMX2020" name="A11-device_realme_RMX2020" remote="denji" revision="dot11" clone-depth="1" />
+       <project path="vendor/realme/RMX2020" name="A11-vendor_realme_RMX2020" remote="denji" revision="11.0" clone-depth="1" />
+       <project path="kernel/realme/RMX2020" name="A11-kernel_realme_RMX2020" remote="denji" revision="Q" clone-depth="1" />
+
+    <!-- RealmeDirac & RealmeParts -->
+       <project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="denji" revision="11.0" clone-depth="1" />
+       <project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="denji" revision="11.0" clone-depth="1" />
+
+    <!-- Replacement -->
+       <remove-project name="platform/external/selinux" />
+       <project path="external/selinux" name="android_external_selinux" remote="patch" revision="lineage-18.1" clone-depth="1" />
+	
 </manifest>
