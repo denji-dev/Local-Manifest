@@ -19,11 +19,11 @@
 	<!-- IMS -->
 	        <project path="vendor/realme/RMX2020-ims" name="A13-vendor_realme_RMX2020-ims" remote="denji" revision="arrow-13.1-rui2" clone-depth="1" />
         <!-- MTK Hardware -->
-	        <remove-project name="ArrowOS/android_hardware_mediatek" />
+	        <remove-project name="android_hardware_mediatek" />
   	        <project path="hardware/mediatek" name="android_hardware_mediatek" remote="los" revision="lineage-20" clone-depth="1" />
 
 	<!-- Sepolicy -->
-	        <remove-project name="ArrowOS/android_device_mediatek_sepolicy_vndr" />
+	        <remove-project name="android_device_mediatek_sepolicy_vndr" />
 		<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="los" revision="lineage-20" clone-depth="1" />
 
 </manifest>
