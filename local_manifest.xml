@@ -6,9 +6,6 @@
                 <remote name="denji"
 			fetch="https://github.com/Rinto02" />
 
-	        <remote name="arrow"
-			fetch="https://github.com/ArrowOS" />
-
         <!-- Device Trees -->
                 <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="denji" revision="arrow-13.1-rui2" clone-depth="1" />
                 <project path="vendor/realme/RMX2020" name="A13-vendor_realme_RMX2020" remote="denji" revision="arrow-13.1-rui2" clone-depth="1" />
@@ -16,12 +13,5 @@
 
 	<!-- IMS -->
 	        <project path="vendor/realme/RMX2020-ims" name="A13-vendor_realme_RMX2020-ims" remote="denji" revision="arrow-13.1-rui2" clone-depth="1" />
-        <!-- MTK Hardware -->
-	        <remove-project name="android_hardware_mediatek" />
-  	        <project path="hardware/mediatek" name="android_hardware_mediatek" remote="arrow" revision="arrow-13.1" clone-depth="1" />
-
-	<!-- Sepolicy -->
-	        <remove-project name="android_device_mediatek_sepolicy_vndr" />
-		<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="arrow" revision="arrow-13.1" clone-depth="1" />
-
+	
 </manifest>
