@@ -12,6 +12,9 @@
 		<remote name="trees"
 			fetch="https://github.com/PixelOS-Devices" />
 
+	        <remote name="los"
+			fetch="https://github.com/LineageOS" />
+
         <!-- Device Trees -->
                 <project path="device/realme/RMX2020" name="device_realme_RMX2020-A15" remote="denji" revision="15" clone-depth="1" />
                 <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="trees" revision="fifteen" clone-depth="1" />
@@ -19,4 +22,11 @@
 
 	<!-- IMS -->
 	        <project path="vendor/realme/RMX2020-ims" name="vendor_realme_RMX2020-ims" remote="trees" revision="fifteen" clone-depth="1" />
+
+	<!-- MTK Hardware -->
+  	        <project path="hardware/mediatek" name="android_hardware_mediatek" remote="los" revision="lineage-22.1" clone-depth="1" />
+	
+	<!-- Sepolicy -->
+		<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="los" revision="lineage-22.1" clone-depth="1" />
+	
 </manifest>
