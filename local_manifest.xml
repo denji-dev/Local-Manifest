@@ -16,7 +16,7 @@
 			fetch="https://github.com/LineageOS" />
 
         <!-- Device Trees -->
-                <project path="device/realme/RMX2020" name="device_realme_RMX2020-A15" remote="denji" revision="los-22" clone-depth="1" />
+                <project path="device/realme/RMX2020" name="device_realme_RMX2020-A15" remote="denji" revision="rising-15" clone-depth="1" />
                 <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="trees" revision="fifteen" clone-depth="1" />
                 <project path="kernel/realme/RMX2020" name="kernel_realme_RMX2020" remote="trees" revision="fifteen" clone-depth="1" />
 
